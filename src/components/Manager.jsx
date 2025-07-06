@@ -197,7 +197,7 @@ function Manager() {
                           className="flex items-center justify-center"
                           onClick={() => handleCopyText(item.password)}
                         >
-                          {item.password}
+                          {"*".repeat(item.password.length)}
                           <div className="flex ps-2 cursor-pointer">
                             <i class="fa-solid fa-copy"></i>
                           </div>
