@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .mycontainer {
+    @apply px-4 py-6 mx-auto; /* mobile */
+    @apply md:px-40 md:py-10 md:pb-0 md:mb-0; /* desktop */
+  }
+  .input {
+    @apply rounded-full px-4 py-2 border-2 border-green-500 w-full;
+  }
+}
