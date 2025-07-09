@@ -37,11 +37,13 @@ function Manager() {
         "siteDetails",
         JSON.stringify([...siteDetailsArray, { ...form, id: uuidv4() }])
       );
+      toast.success("Details saved successfully!");
       setForm({ site: "", username: "", password: "" });
     } else {
       toast.error("Fill the required fields!", {autoClose: 2000});
     }
   };
+  
   const editSiteDetails = (id) => {
     let siteDeatails = siteDetailsArray.find((item) => item.id === id);
     console.log(siteDeatails);
